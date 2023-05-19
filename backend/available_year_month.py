@@ -1,11 +1,11 @@
 import sqlalchemy
 import pandas as pd
 def get_available_period():
-    user = "root"
-    password = "h3470obobby"
-    host = "localhost"
-    port = "3306"
-    database = "sales_DB"
+    user = "xxxx"
+    password = "xxxx"
+    host = "xxxx"
+    port = "xxxx"
+    database = "xxxx"
     url = f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
 
     engine = sqlalchemy.create_engine(url)

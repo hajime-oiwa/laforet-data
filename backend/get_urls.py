@@ -4,11 +4,11 @@ import numpy as np
 
 def get_url_table():
     #データベースのレコード取得
-    user = "root"
-    password = "h3470obobby"
-    host = "localhost"
-    port = "3306"
-    database = "sales_DB"
+    user = "xxxx"
+    password = "xxxxxxxx"
+    host = "xxxx"
+    port = "xxxx"
+    database = "xxxx"
     url = f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
 
     engine = sqlalchemy.create_engine(url)

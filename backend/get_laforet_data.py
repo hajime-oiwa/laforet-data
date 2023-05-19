@@ -11,11 +11,11 @@ def get_laforet_table(url_list=[]):
     df_monthly = pd.DataFrame({})
 
     #データベースの最新レコード取得
-    user = "root"
-    password = "h3470obobby"
-    host = "localhost"
-    port = "3306"
-    database = "sales_DB"
+    user = "xxxx"
+    password = "xxxx"
+    host = "xxxx"
+    port = "xxxx"
+    database = "xxxx"
     url = f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
 
     engine = sqlalchemy.create_engine(url)
@@ -36,7 +36,7 @@ def get_laforet_table(url_list=[]):
     #最新レコードの日付から、取得対象の愛と狂気スプレッドシートURLをリスト化
 
     search_url_list = [url_list[i] for i in range(len(url_list)) if url_list[i][0] >= last_year and url_list[i][1] >= last_month]
-    api_key = "AIzaSyBM0ESduDVTsOqPF6vCT4se4fJeGdUf6SI"
+    api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
     #愛と狂気のデータ取得
 
@@ -82,10 +82,10 @@ def get_laforet_table(url_list=[]):
     else:
         df_monthly = df_monthly[df_monthly["sales_date"] > last_date]
 
-    conn = pymysql.connect(host="localhost",
-            user="root",
-            password="h3470obobby",
-            database="sales_DB",
+    conn = pymysql.connect(host="xxxx",
+            user="xxxx",
+            password="xxxx",
+            database="xxxx",
             cursorclass=pymysql.cursors.DictCursor)
 
     with conn:
